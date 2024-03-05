@@ -32,16 +32,16 @@ type Client struct {
 
 // New creates a new instance of the Airtable client
 func New(apiKey, baseID string) (*Client, error) {
-	if !utils.IsValidAPIKey(apiKey) {
-		return nil, fmt.Errorf("invalid API Key encountered: %s", apiKey)
-	}
+	// if !utils.IsValidAPIKey(apiKey) {
+	// 	return nil, fmt.Errorf("invalid API Key encountered: %s", apiKey)
+	// }
 	if !utils.IsValidBaseID(baseID) {
 		return nil, fmt.Errorf("invalid base ID encountered: %s", baseID)
 	}
 
 	c := Client{
-		apiKey: apiKey,
-		baseID: baseID,
+		apiKey:                   apiKey,
+		baseID:                   baseID,
 		ShouldRetryIfRateLimited: true,
 		HTTPClient:               http.DefaultClient,
 	}
