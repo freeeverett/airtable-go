@@ -1,7 +1,11 @@
-<a href="https://godoc.org/github.com/fabioberger/airtable-go" ><img src="http://img.shields.io/badge/godoc-reference-5272B4.svg?style=flat-square" /></a>
+<a href="https://godoc.org/github.com/freeeverett/airtable-go" ><img src="http://img.shields.io/badge/godoc-reference-5272B4.svg?style=flat-square" /></a>
 
 Airtable Go Client Library
 -------------------------------
+### Source Repository
+
+[https://github.com/fabioberger/airtable-go](https://github.com/fabioberger/airtable-go)
+
 
 ### Installation
 
@@ -10,12 +14,12 @@ Make sure you have Golang v1.6 or higher installed. If not, <a href="https://gol
 Fetch airtable-go:
 
 ```
-go get github.com/fabioberger/airtable-go
+go get github.com/freeeverett/airtable-go
 ```
 Import airtable-go into your project:
 
 ```go
-import "github.com/fabioberger/airtable-go"
+import "github.com/freeeverett/airtable-go"
 ```
 
 ### Usage
@@ -25,7 +29,7 @@ Create an instance of the airtable-go client:
 ```go
 import (
 	"os"
-	"github.com/fabioberger/airtable-go"
+	"github.com/freeeverett/airtable-go"
 )
 
 airtableAPIKey := os.Getenv("AIRTABLE_API_KEY")
@@ -36,7 +40,7 @@ if err != nil {
 	panic(err)
 }
 ```
-You can now call methods on the client instance. All client methods are documented in the project's <a href="https://godoc.org/github.com/fabioberger/airtable-go">GoDoc page</a>. You can also check out the <a href="https://github.com/fabioberger/airtable-go/blob/master/tests/stubbed_tests/client_test.go">stubbed</a> and <a href="https://github.com/fabioberger/airtable-go/blob/master/tests/integration_tests/client_test.go">integration</a> tests included in this project for working examples of all the client methods and options.
+You can now call methods on the client instance. All client methods are documented in the project's <a href="https://godoc.org/github.com/freeeverett/airtable-go">GoDoc page</a>. You can also check out the <a href="https://github.com/freeeverett/airtable-go/blob/master/tests/stubbed_tests/client_test.go">stubbed</a> and <a href="https://github.com/freeeverett/airtable-go/blob/master/tests/integration_tests/client_test.go">integration</a> tests included in this project for working examples of all the client methods and options.
 
 For Airtable specific documentation, see the interactive documentation at [https://airtable.com/api](https://airtable.com/api).
 
